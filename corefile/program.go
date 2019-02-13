@@ -6,7 +6,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"golang.org/x/debug/dwarf"
+	"github.com/tombergan/goheapdump/debug/dwarf"
 )
 
 // Program describes the state of a program in a core file.
@@ -94,6 +94,7 @@ func (v *Var) IsExportedGlobal() bool {
 // For global variables, this includes PkgPath.
 // For local variables, this is just v.Name.
 func (v *Var) FullName() string {
+
 	if v.PkgPath != "" {
 		return v.PkgPath + "." + v.Name
 	}

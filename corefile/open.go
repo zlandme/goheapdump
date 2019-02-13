@@ -6,8 +6,11 @@ import (
 	"reflect"
 	"strings"
 
-	"golang.org/x/debug/arch"
-	"golang.org/x/debug/dwarf"
+	"github.com/tombergan/goheapdump/debug/arch"
+	"github.com/tombergan/goheapdump/debug/dwarf"
+	//"golang.org/x/debug/arch"
+	//"golang.org/x/debug/arch"
+	//"golang.org/x/debug/dwarf"
 )
 
 // OpenProgramOptions describes options for OpenProgram.

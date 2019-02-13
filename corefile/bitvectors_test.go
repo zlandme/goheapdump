@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"golang.org/x/debug/arch"
+	"github.com/tombergan/goheapdump/debug/arch"
 )
 
 func TestRoundUpDown(t *testing.T) {

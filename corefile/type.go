@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/debug/dwarf"
+	"github.com/tombergan/goheapdump/debug/dwarf"
 )
 
 // Type is the interface implemented by all types.

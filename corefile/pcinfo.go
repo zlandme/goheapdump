@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"golang.org/x/debug/dwarf"
+	"github.com/tombergan/goheapdump/debug/dwarf"
 )
 
 // PCInfo gives information about a program counter.

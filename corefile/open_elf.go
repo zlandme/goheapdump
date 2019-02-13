@@ -9,8 +9,10 @@ import (
 	"sort"
 	"strings"
 
-	"golang.org/x/debug/arch"
-	"golang.org/x/debug/elf"
+	"github.com/tombergan/goheapdump/debug/arch"
+	"github.com/tombergan/goheapdump/debug/elf"
+	//"golang.org/x/debug/arch"
+	//"golang.org/x/debug/elf"
 )
 
 func readELFCore(mmapf *mmapFile, rp *rawProgram, writable bool) error {

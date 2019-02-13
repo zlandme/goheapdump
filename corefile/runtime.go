@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"golang.org/x/debug/arch"
+	"github.com/tombergan/goheapdump/debug/arch"
 )
 
 // OSThread describes a kernel thread.
@@ -316,9 +316,9 @@ func (rt *RuntimeLibrary) initialize(threads []*OSThread) error {
 	} else {
 		rt.Version = string(s.Bytes)
 		logf("Go runtime version %s", rt.Version)
-		if rt.Version != "go1.8.typealias" {
-			return fmt.Errorf("go runtime version is %q but the only supported version is \"go1.8.typealias\"", rt.Version)
-		}
+		//if rt.Version != "go1.8.typealias" {
+		//	return fmt.Errorf("go runtime version is %q but the only supported version is \"go1.8.typealias\"", rt.Version)
+		//}
 	}
 
 	switch rt.GOARCH {

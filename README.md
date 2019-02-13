@@ -9,6 +9,6 @@ $ cd examples
 $ ulimit -c unlimited
 $ go build -o httpleak httpleak.go
 $ GOTRACEBACK=crash ./httpleak
-$ cd ../heapcheck && go run main.go ./core ./httpleak
+$ cd ../heapcheck && go run main.go /home/ebytes/go/src/github.com/tombergan/goheapdump/examples/core /home/ebytes/go/src/github.com/tombergan/goheapdump/examples/httpleak
 $ cd ../heapview && go run main.go ./core ./httpleak
 ```
